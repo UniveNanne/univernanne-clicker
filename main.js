@@ -208,6 +208,7 @@ function soda(x,y) {
 }
 
 function tektoTrain(y) {
+ // make tekto train spawn !
  var x = -1400;
  var deleted = false;
  var s = document.createElement("img");
