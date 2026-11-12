@@ -152,23 +152,25 @@ function makeIcon(posx = null,posy = null,type = null,clone) {
  }
  
  function loop() {
+    // collision when leave the canvas
+  
     if (x >= window.innerWidth) {
-     x -= 100;
+     x -= 50;
      touchMaxCanvas = true;
     }
     
     if (x <= 0) {
-     x += 100;
+     x += 50;
      touchMaxCanvas = true;
     }
 
     if (y >= window.innerHeight) {
-     y -= 100;
+     y -= 50;
      touchMaxCanvas = true;
     }
     
     if (y <= 0) {
-     y += 100;
+     y += 50;
      touchMaxCanvas = true;
     }
     
