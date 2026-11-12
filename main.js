@@ -82,9 +82,9 @@ function makeIcon(posx = null,posy = null,type = null,clone) {
     soda(x,y)
    }
    
-   if (random == 0 && (Math.random() >= 0.7)) {
-tektoTrain(y)
-}
+   if (random == 0 && (Math.random() >= 0.5)) {
+    tektoTrain(y)
+   }
    
    canEsquive = -1;
    e.src = "icon/"+game.icon[random]+"2.png";
