@@ -217,6 +217,11 @@ function tektoTrain(y) {
  s.style.top = (y+Math.random() * 1) + "px";
  s.style.zIndex = 2;
  s.style.scale = 1.6;
+ s.onclick = function (){
+   s.remove();
+  deleted = true;
+  game.scores += 500;
+ }
  document.body.appendChild(s);
  
  requestAnimationFrame(loop);
