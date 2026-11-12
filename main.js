@@ -155,22 +155,22 @@ function makeIcon(posx = null,posy = null,type = null,clone) {
     // collision when leave the canvas
   
     if (x >= window.innerWidth) {
-     x -= 50;
+     x -= 10;
      touchMaxCanvas = true;
     }
     
     if (x <= 0) {
-     x += 50;
+     x += 10;
      touchMaxCanvas = true;
     }
 
     if (y >= window.innerHeight) {
-     y -= 50;
+     y -= 10;
      touchMaxCanvas = true;
     }
     
     if (y <= 0) {
-     y += 50;
+     y += 10;
      touchMaxCanvas = true;
     }
     
@@ -180,15 +180,16 @@ function makeIcon(posx = null,posy = null,type = null,clone) {
      touchMaxCanvas = false;
     }
 
-  if (!deleted) {
-   // if not
-   e.style.left = x+"px";
-   e.style.top = y+"px";
-   x += xx;
-   y += yy;
-   requestAnimationFrame(loop);
+    if (!deleted) {
+      // if not
+     
+      e.style.left = x+"px";
+      e.style.top = y+"px";
+      x += xx;
+      y += yy;
+      requestAnimationFrame(loop);
+    }
   }
- }
 }
 
 function soda(x,y) {
